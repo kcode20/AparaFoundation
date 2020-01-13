@@ -31,7 +31,7 @@ export default function App() {
 					<Nav className='mr-auto'></Nav>
 					<Nav>
 						<Nav.Link href='/'>Home</Nav.Link>
-						<Nav.Link href='/about'>About</Nav.Link>
+						<Nav.Link href='/team'>Team</Nav.Link>
 						<Nav.Link href='/users'>Users</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
