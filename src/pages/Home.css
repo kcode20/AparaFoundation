@@ -1,27 +1,46 @@
 .Home {
 	text-align: center;
 }
+.quote {
+	font-family: "Meddon", cursive;
+	font-size: 45px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 50px;
+	padding-right: 50px;
+}
 
 .cover {
-	height: 100vh;
-	background: url(../images/couple.jpg) no-repeat center center fixed;
+	height: 85vh;
+	background: url(../images/blessed.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-.action {
-	text-align: center;
+	position: relative;
 }
 
-.action:hover {
-	border: 7px solid #301934;
-	top: -30px;
+.callToAction {
+	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/so-white.png");
+}
+
+.action {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
 	transition-property: all;
 	transition-duration: 0.3s;
 	transition-timing-function: ease;
 	transition-delay: 0s;
-	box-shadow: 5px 10px #a193a3;
+}
+
+.action:hover {
+	border: 7px solid #301934;
+	transform: translateY(-39px);
+	box-shadow: 5px 10px #dca4ce;
 }
 
 .Home img {
