@@ -2,21 +2,28 @@
 	text-align: center;
 }
 
-.Home-logo {
-	height: 40vmin;
+.cover {
+	height: 100vh;
+	background: url(../images/couple.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.action {
+	text-align: center;
 }
 
-.Home-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+.action:hover {
+	border: 7px solid #301934;
+	top: -30px;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+	box-shadow: 5px 10px #a193a3;
 }
 
-.Home-link {
-	color: #09d3ac;
+.Home img {
+	margin: 20px;
 }
