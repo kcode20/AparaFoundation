@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-import donate from "../images/heart.png";
-import volunteer from "../images/respect.png";
-import scholarship from "../images/ribbon.png";
-import project from "../images/animal.png";
+import donate from "../images/donation.png";
+import volunteer from "../images/volunteer.png";
+import scholarship from "../images/scholarship.png";
+import project from "../images/world.png";
+import depression from "../images/illness.png";
 
 import "./Home.css";
 
@@ -12,12 +13,55 @@ export default function Home() {
 	return (
 		<div className='Home'>
 			<div className='cover'>
-				<p className='quote'>
-					“Those blessed with a struggle, are also blessed with the gift to
-					inspire”
-					<br />
-					–Dr. Apara
-				</p>
+				<div className='cover-text'>
+					<p className='quote'>
+						“Those blessed with a struggle, are also blessed with the gift to
+						inspire”
+						<br />
+						–Dr. Apara
+					</p>
+					<p className='quote-subtitle'>
+						We strive to provide support to enable individuals to achieve better
+						health outcomes and a stronger quality of life.
+					</p>
+				</div>
+			</div>
+			<div>
+				<Container>
+					<Row>
+						<Col xs={6}>
+							<p>
+								The APARA Foundation is a 501c3 not for profit organization
+								centered on increasing the quality of life in individuals
+								battling a variety of health conditions. The APARA foundation
+								partners with local and national health care organizations to
+								help increase the quality of life in individuals battling what
+								we identify as “invisible illnesses.” Invisible Illnesses are
+								diseases or conditions that may not be noticeable on the
+								individuals battling them. These conditions include, but are not
+								limited to, sickle cell anemia, lupus, mental health conditions,
+								and some cancers. Founded in 2019 by Dr. Arinayo Apara, the
+								foundation’s mission is to extend the outlet of support for our
+								invisible warriors. We do this through a series of educational,
+								peer support, and financial programs.
+							</p>
+							<p>
+								Through the APARA foundation, Dr. Apara aims to change the face
+								of what is means to battle and conquer these difficult
+								conditions. The foundation strives to highlight the strength and
+								benefits that comes from adversity. Shifting the outlook of
+								these conditions from a negative to a positive allows for
+								individuals to find strength in their struggles. With the
+								additional support the foundation aims to provide, individuals
+								will be able to achieve better health outcomes and a stronger
+								quality of life.
+							</p>
+						</Col>
+						<Col className='depression'>
+							<Image src={depression} height={500} />
+						</Col>
+					</Row>
+				</Container>
 			</div>
 			<div className='callToAction'>
 				<Container>

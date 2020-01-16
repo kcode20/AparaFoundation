@@ -1,16 +1,24 @@
 .Home {
 	text-align: center;
 }
+.cover-text {
+	color: white;
+	text-align: center;
+	width: 65%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .quote {
 	font-family: "Meddon", cursive;
 	font-size: 45px;
-	text-align: center;
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	padding-left: 50px;
-	padding-right: 50px;
+	vertical-align: middle;
+}
+
+.quote-subtitle {
+	font-size: 25px;
 }
 
 .cover {
@@ -24,6 +32,7 @@
 }
 
 .callToAction {
+	height: 100vh;
 	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/so-white.png");
 }
 
@@ -37,12 +46,13 @@
 	transition-delay: 0s;
 }
 
-.action:hover {
-	border: 7px solid #301934;
-	transform: translateY(-39px);
-	box-shadow: 5px 10px #dca4ce;
+.depression {
+	position: absolute;
+	top: -75px;
 }
 
-.Home img {
-	margin: 20px;
+.action:hover {
+	border: 7px solid #8b55a9;
+	transform: translateY(-39px);
+	box-shadow: 5px 10px #dca4ce;
 }
