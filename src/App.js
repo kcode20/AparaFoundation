@@ -12,7 +12,7 @@ export default function App() {
 			<div>
 				<Navigation />
 			</div>
-			<div style={{ paddingTop: "56px" }}>
+			<div className='pageBody'>
 				<Switch>
 					<Route path='/team'>
 						<Team />

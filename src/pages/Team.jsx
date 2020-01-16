@@ -11,10 +11,10 @@ export default function Team() {
 			<Container>
 				<h1>Team</h1>
 				<Row>
-					<Col className='center-column'>
+					<Col className='center-column' sm>
 						<Image src={founder} width={500} rounded />
 					</Col>
-					<Col className='center-column'>
+					<Col className='center-column' sm>
 						<h1> Meet the Founder </h1>
 						<h3>Dr. Arinayo Apara</h3>
 						<p>

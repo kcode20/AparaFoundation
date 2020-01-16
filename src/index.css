@@ -1,10 +1,13 @@
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
+
+	font-family: "Quicksand", sans-serif !important;
+	color: #301934 !important;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+.pageBody {
+	padding-top: 100px;
 }
 
 .chunk {
@@ -23,4 +26,10 @@ h5 {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
+}
+
+@media only screen and (max-width: 600px) {
+	.pageBody {
+		padding-top: 100px;
+	}
 }
