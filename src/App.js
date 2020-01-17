@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 
 import Home from "./pages/Home";
 import Team from "./pages/Team";
+import Contact from "./pages/Contact";
 
 export default function App() {
 	return (
@@ -17,8 +18,8 @@ export default function App() {
 					<Route path='/team'>
 						<Team />
 					</Route>
-					<Route path='/users'>
-						<Users />
+					<Route path='/contact'>
+						<Contact />
 					</Route>
 					<Route path='/'>
 						<Home />
@@ -27,8 +28,4 @@ export default function App() {
 			</div>
 		</Router>
 	);
-}
-
-function Users() {
-	return <h2>Users</h2>;
 }
