@@ -41,7 +41,8 @@ export default function Programs() {
 							individuals with similar life experiences for purpose of
 							inspiration, guidance, and peer support. This program also connect
 							families where members may be battling similar health conditions.
-							All influencers and supporters are voluntary and
+							All influencers and supporters are voluntary and have experience
+							battling those conditions.
 						</p>
 					</Col>
 					<Col>
