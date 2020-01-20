@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 import "./Footer.css";
 import logo from "../images/IMG_9879.JPG";
@@ -15,63 +16,77 @@ export default function Footer() {
 				color: "white",
 			}}
 		>
-			<footer class='font-small mdb-color pt-4'>
-				<div class='container text-center text-md-left'>
-					<div class='row text-center text-md-left mt-3 pb-3'>
-						<div class='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
-							<h6 class='text-uppercase mb-4 font-weight-bold'>
+			<footer className='font-small mdb-color pt-4'>
+				<Container>
+					<Row className='text-center'>
+						<Col>
+							<h6 className='text-uppercase mb-4 font-weight-bold'>
 								<img src={logo} height={75} />
 							</h6>
 							<p>
-								Here you can use rows and columns to organize your footer
-								content. Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit.
+								We strive to provide support to enable individuals to achieve
+								better health outcomes and a stronger quality of life.
 							</p>
-						</div>
+						</Col>
 
-						<hr class='w-100 clearfix d-md-none' />
+						<Col>
+							<h6 className='text-uppercase mb-4 font-weight-bold'>Contact</h6>
+							<p>
+								<i className='fas fa-home mr-3'></i> New York, NY 10012, US
+							</p>
+							<p>
+								<i className='fas fa-envelope mr-3'></i> info@gmail.com
+							</p>
+							<p>
+								<i className='fas fa-phone mr-3'></i> + 01 234 567 88
+							</p>
+							<p>
+								<i className='fas fa-print mr-3'></i> + 01 234 567 89
+							</p>
+						</Col>
 
-						<hr class='w-100 clearfix d-md-none' />
-
-						<div class='col-md-3 col-lg-2 col-xl-2 mx-auto mt-3'>
-							<h6 class='text-uppercase mb-4 font-weight-bold'>Useful links</h6>
-							<p>
-								<a href='#!'>Your Account</a>
-							</p>
-							<p>
-								<a href='#!'>Become an Affiliate</a>
-							</p>
-							<p>
-								<a href='#!'>Shipping Rates</a>
-							</p>
-							<p>
-								<a href='#!'>Help</a>
-							</p>
-						</div>
-
-						<hr class='w-100 clearfix d-md-none' />
-
-						<div class='col-md-4 col-lg-3 col-xl-3 mx-auto mt-3'>
-							<h6 class='text-uppercase mb-4 font-weight-bold'>Contact</h6>
-							<p>
-								<i class='fas fa-home mr-3'></i> New York, NY 10012, US
-							</p>
-							<p>
-								<i class='fas fa-envelope mr-3'></i> info@gmail.com
-							</p>
-							<p>
-								<i class='fas fa-phone mr-3'></i> + 01 234 567 88
-							</p>
-							<p>
-								<i class='fas fa-print mr-3'></i> + 01 234 567 89
-							</p>
-						</div>
-					</div>
+						<Col>
+							<div className='col-md-3 col-lg-2 col-xl-2 mx-auto mt-3'>
+								<h6 className='text-uppercase mb-4 font-weight-bold'>
+									Follow Us On Social Media
+								</h6>
+								<ul className='list-unstyled list-inline'>
+									<li className='list-inline-item'>
+										<a className='btn-floating btn-sm rgba-white-slight mx-1'>
+											<img
+												src={facebook}
+												height={25}
+												className='fab fa-facebook-f'
+											/>
+										</a>
+									</li>
+									<li className='list-inline-item'>
+										<a className='btn-floating btn-sm rgba-white-slight mx-1'>
+											<img
+												src={twitter}
+												height={25}
+												className='fab fa-twitter'
+											/>
+										</a>
+									</li>
+									<li className='list-inline-item'>
+										<a className='btn-floating btn-sm rgba-white-slight mx-1'>
+											<img
+												src={instagram}
+												height={25}
+												className='fab fa-google-plus-g'
+											/>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</Col>
+					</Row>
 
 					<hr />
 
-					<div class='row d-flex align-items-center'>
-						<div class='col-md-7 col-lg-8'>
+					<Row className='align-items-center'>
+						<div>
 							Made with <span style={{ color: "#e25555;" }}>&#9829;</span> by
 							@kcode
 							<div>
@@ -88,38 +103,8 @@ export default function Footer() {
 								</a>
 							</div>
 						</div>
-
-						<div class='col-md-5 col-lg-4 ml-lg-0'>
-							<div class='text-center text-md-right'>
-								<ul class='list-unstyled list-inline'>
-									<li class='list-inline-item'>
-										<a class='btn-floating btn-sm rgba-white-slight mx-1'>
-											<img
-												src={facebook}
-												height={25}
-												class='fab fa-facebook-f'
-											/>
-										</a>
-									</li>
-									<li class='list-inline-item'>
-										<a class='btn-floating btn-sm rgba-white-slight mx-1'>
-											<img src={twitter} height={25} class='fab fa-twitter' />
-										</a>
-									</li>
-									<li class='list-inline-item'>
-										<a class='btn-floating btn-sm rgba-white-slight mx-1'>
-											<img
-												src={instagram}
-												height={25}
-												class='fab fa-google-plus-g'
-											/>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+					</Row>
+				</Container>
 			</footer>
 		</div>
 	);
