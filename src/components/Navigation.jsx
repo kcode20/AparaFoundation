@@ -16,6 +16,7 @@ export default function App() {
 						<Nav.Link href='/'>Home</Nav.Link>
 						<Nav.Link href='/team'>Team</Nav.Link>
 						<Nav.Link href='/contact'>Contact</Nav.Link>
+						<Nav.Link href='/programs'>Programs</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
