@@ -72,12 +72,21 @@ export default function Footer() {
 
 					<div class='row d-flex align-items-center'>
 						<div class='col-md-7 col-lg-8'>
-							<p class='text-center text-md-left'>
-								© 2020 Copyright:
-								<a href='https://mdbootstrap.com/education/bootstrap/'>
-									<strong> MDBootstrap.com</strong>
+							Made with <span style={{ color: "#e25555;" }}>&#9829;</span> by
+							@kcode
+							<div>
+								Icons made by{" "}
+								<a
+									href='https://www.flaticon.com/authors/freepik'
+									title='Freepik'
+								>
+									Freepik
+								</a>{" "}
+								from{" "}
+								<a href='https://www.flaticon.com/' title='Flaticon'>
+									www.flaticon.com
 								</a>
-							</p>
+							</div>
 						</div>
 
 						<div class='col-md-5 col-lg-4 ml-lg-0'>
