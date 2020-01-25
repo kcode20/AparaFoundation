@@ -7,7 +7,7 @@ export default function App() {
 		<>
 			<Navbar bg='light' variant='light' fixed='top'>
 				<Navbar.Brand href='/'>
-					<img src={logo} height={75} />
+					<img src={logo} height={75} alt='Apara Foundation' />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
@@ -16,6 +16,7 @@ export default function App() {
 						<Nav.Link href='/'>Home</Nav.Link>
 						<Nav.Link href='/team'>Team</Nav.Link>
 						<Nav.Link href='/contact'>Contact</Nav.Link>
+						<Nav.Link href='/programs'>Programs</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

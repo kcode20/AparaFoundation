@@ -5,7 +5,7 @@ import donate from "../images/donation.png";
 import volunteer from "../images/volunteer.png";
 import scholarship from "../images/scholarship.png";
 import project from "../images/world.png";
-import depression from "../images/illness.png";
+import depression from "../images/kids.png";
 
 import "./Home.css";
 
@@ -58,7 +58,7 @@ export default function Home() {
 							</p>
 						</Col>
 						<Col className='depression'>
-							<Image src={depression} height={500} />
+							<Image src={depression} width={500} />
 						</Col>
 					</Row>
 				</Container>
