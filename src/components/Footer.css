@@ -3,6 +3,10 @@
 	padding-bottom: 25px;
 }
 
-hr {
-	border-top: white;
+.separator {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.left-align {
+	text-align: left;
 }
