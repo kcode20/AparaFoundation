@@ -35,7 +35,7 @@ export default function Footer() {
 						<Col>
 							<h6 className='text-uppercase mb-4 font-weight-bold'>Contact</h6>
 							<p>
-								<img alt='' src={home} height={15} /> Brooklyn, NY, US
+								<img alt='' src={home} height={15} /> Long Island, NY, US
 							</p>
 							<p>
 								<img alt='' src={email} height={15} />{" "}
@@ -54,14 +54,14 @@ export default function Footer() {
 								<li className='list-inline-item'>
 									<img
 										src={facebook}
-										alt=''
+										alt='facebook'
 										height={25}
 										className='fab fa-facebook-f'
 									/>
 								</li>
 								<li className='list-inline-item'>
 									<img
-										alt=''
+										alt='twitter'
 										src={twitter}
 										height={25}
 										className='fab fa-twitter'
@@ -70,7 +70,7 @@ export default function Footer() {
 								<li className='list-inline-item'>
 									<img
 										src={instagram}
-										alt=''
+										alt='instagram'
 										height={25}
 										className='fab fa-google-plus-g'
 									/>
