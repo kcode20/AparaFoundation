@@ -11,11 +11,10 @@ import {
 import donation from "../images/donation.jpg";
 import PaypalButton from "../components/PaypalButton";
 import "./Donation.css";
-import { PaypalSandboxKey, PaypalProductionKey } from "../secrets";
 
 const CLIENT = {
-	sandbox: PaypalSandboxKey,
-	production: PaypalProductionKey,
+	sandbox: process.env.REACT_APP_PAYPAL_SANDBOX_KEY,
+	production: process.env.REACT_APP_PAYPAL_PRODUCTION_KEY,
 };
 
 const ENV = "production";
