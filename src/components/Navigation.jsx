@@ -26,6 +26,9 @@ export default function App() {
 						<Nav.Link className='linkStyle' href='/programs'>
 							Programs
 						</Nav.Link>
+						<Nav.Link className='linkStyle' href='/donate'>
+							Donate
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
