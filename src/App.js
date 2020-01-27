@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Programs from "./pages/Programs";
+import Donation from "./pages/Donation";
 
 export default function App() {
 	return (
@@ -25,6 +26,9 @@ export default function App() {
 					</Route>
 					<Route path='/programs'>
 						<Programs />
+					</Route>
+					<Route path='/donate'>
+						<Donation />
 					</Route>
 					<Route path='/'>
 						<Home />
