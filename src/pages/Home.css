@@ -1,6 +1,16 @@
 .Home {
 	text-align: center;
 }
+
+a {
+	text-decoration: none;
+	color: #301934 !important;
+}
+a:hover {
+	text-decoration: none !important;
+	color: #301934 !important;
+}
+
 .cover-text {
 	color: white;
 	text-align: center;

@@ -1,0 +1,14 @@
+.linkStyle {
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	border-radius: 5px;
+	border: 2px solid #c95aa5;
+}
+
+a.linkStyle.nav-link:hover {
+	border-color: purple;
+	color: white !important;
+	background-color: #c148b9;
+}
