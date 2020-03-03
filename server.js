@@ -21,8 +21,8 @@ app.post('/send_email', function(req, res) {
 	const transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
-			user: 'aparafoundation.dev@gmail.com', // generated ethereal user
-			pass: 'aparafoundation123', // generated ethereal password
+			user: process.env.REACT_APP_EMAIL, // generated ethereal user
+			pass: process.env.REACT_APP_PASSWORD, // generated ethereal password
 		},
 	});
 
