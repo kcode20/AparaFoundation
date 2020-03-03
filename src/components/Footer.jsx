@@ -1,22 +1,22 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import "./Footer.css";
-import logo from "../images/IMG_9879.JPG";
-import instagram from "../images/instagram.png";
-import facebook from "../images/facebook.png";
-import twitter from "../images/twitter.png";
-import home from "../images/home.png";
-import email from "../images/email.png";
-import phone from "../images/phone.png";
+import './Footer.css';
+import logo from '../images/IMG_9879.JPG';
+import instagram from '../images/instagram.png';
+import facebook from '../images/facebook.png';
+import twitter from '../images/twitter.png';
+import home from '../images/home.png';
+import email from '../images/email.png';
+import phone from '../images/phone.png';
 
 export default function Footer() {
 	return (
 		<div
 			className='footer'
 			style={{
-				backgroundColor: "#301934",
-				color: "white",
+				backgroundColor: '#301934',
+				color: 'white',
 			}}
 		>
 			<footer className='font-small mdb-color pt-4'>
@@ -38,7 +38,7 @@ export default function Footer() {
 								<img alt='' src={home} height={15} /> Long Island, NY, US
 							</p>
 							<p>
-								<img alt='' src={email} height={15} />{" "}
+								<img alt='' src={email} height={15} />{' '}
 								info@theaparafoundation.com
 							</p>
 							<p>
@@ -83,18 +83,23 @@ export default function Footer() {
 
 					<Row className='align-items-center'>
 						<div>
-							Made with <span style={{ color: "#e25555;" }}>&#9829;</span> by
+							Made with <span style={{ color: '#e25555;' }}>&#9829;</span> by
 							@kcode
 							<div>
-								Icons made by{" "}
+								Icons made by{' '}
 								<a
 									href='https://www.flaticon.com/authors/freepik'
 									title='Freepik'
+									className='freepik'
 								>
 									Freepik
-								</a>{" "}
-								from{" "}
-								<a href='https://www.flaticon.com/' title='Flaticon'>
+								</a>{' '}
+								from{' '}
+								<a
+									href='https://www.flaticon.com/'
+									title='Flaticon'
+									className='freepik'
+								>
 									www.flaticon.com
 								</a>
 							</div>
