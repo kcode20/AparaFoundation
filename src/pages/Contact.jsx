@@ -31,6 +31,7 @@ class Contact extends React.Component {
 		const name = target.id;
 		this.setState({
 			[name]: value,
+			success: false,
 		});
 	};
 
@@ -63,7 +64,9 @@ class Contact extends React.Component {
 						</Col>
 						<Col className='center-column'>
 							{this.state.success && (
-								<Alert variant='success'>Successfully sent email.</Alert>
+								<Alert variant='success'>
+									Thank You! Your message has been successfully sent.
+								</Alert>
 							)}
 							<Form onSubmit={this.handleSubmit}>
 								<Form.Group controlId='name' onChange={this.handleInputChange}>
