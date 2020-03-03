@@ -1,6 +1,14 @@
 import React from 'react';
 import axios from 'axios';
-import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap';
+import {
+	Container,
+	Row,
+	Col,
+	Image,
+	Form,
+	Button,
+	Alert,
+} from 'react-bootstrap';
 
 import contact from '../images/contact.png';
 import './Contact.css';
@@ -13,6 +21,7 @@ class Contact extends React.Component {
 			email: '',
 			message: '',
 			subject: '',
+			success: false,
 		};
 	}
 
@@ -20,7 +29,6 @@ class Contact extends React.Component {
 		const target = event.target;
 		const value = target.type === 'checkbox' ? target.checked : target.value;
 		const name = target.id;
-
 		this.setState({
 			[name]: value,
 		});
@@ -28,13 +36,19 @@ class Contact extends React.Component {
 
 	handleSubmit = e => {
 		const { name, email, message, subject } = this.state;
-		console.log(this.state);
-		axios.post('/send_email', {
-			name,
-			email,
-			message,
-			subject,
-		});
+		axios
+			.post('/send_email', {
+				name,
+				email,
+				message,
+				subject,
+			})
+			.then(response => {
+				const { status } = response;
+				if (status == 200) {
+					this.setState({ success: true });
+				}
+			});
 		e.preventDefault();
 	};
 
@@ -48,6 +62,9 @@ class Contact extends React.Component {
 							<Image src={contact} width={300} rounded />
 						</Col>
 						<Col className='center-column'>
+							{this.state.success && (
+								<Alert variant='success'>Successfully sent email.</Alert>
+							)}
 							<Form onSubmit={this.handleSubmit}>
 								<Form.Group controlId='name' onChange={this.handleInputChange}>
 									<Form.Label>Name</Form.Label>

@@ -116,6 +116,7 @@ app.post('/send_email', function(req, res) {
 			console.log(error);
 		} else {
 			console.log('Email sent: ' + info.response);
+			res.status(200).end();
 		}
 	});
 });
