@@ -68,7 +68,7 @@ export default function Home() {
 					<h1>Get Involved</h1>
 					<Row>
 						<Col>
-							<a href='/contact'>
+							<a href='/donate'>
 								<div className='action'>
 									<Image src={donate} width={100} />
 									<h3> Send Donation</h3>
