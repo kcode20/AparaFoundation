@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
-import donate from "../images/donation.png";
-import volunteer from "../images/volunteer.png";
-import scholarship from "../images/scholarship.png";
-import project from "../images/world.png";
-import depression from "../images/kids.png";
+import donate from '../images/donation.png';
+import volunteer from '../images/volunteer.png';
+import scholarship from '../images/scholarship.png';
+import project from '../images/world.png';
+import depression from '../images/kids.png';
 
-import "./Home.css";
+import './Home.css';
 
 export default function Home() {
 	return (
@@ -57,8 +57,8 @@ export default function Home() {
 								quality of life.
 							</p>
 						</Col>
-						<Col className='depression'>
-							<Image src={depression} width={500} />
+						<Col>
+							<Image src={depression} width={500} className='depression' />
 						</Col>
 					</Row>
 				</Container>

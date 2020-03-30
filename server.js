@@ -98,7 +98,7 @@ app.post('/send_email', function(req, res) {
 
 	const mailOptions = {
 		from: 'aparafoundation.dev@gmail.com',
-		to: 'info@theaparafoundation.org',
+		to: 'kh.brooks02@gmail.com',
 		subject: `Website Message: ${subject} `,
 		html: htmlMessage,
 		attachments: [
