@@ -10,9 +10,8 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-	console.log('hello');
-	res.send('Hello World!');
+app.get('/*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.post('/send_email', function(req, res) {
