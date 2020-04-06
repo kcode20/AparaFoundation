@@ -39,7 +39,7 @@ export default function Footer() {
 							</p>
 							<p>
 								<img alt='' src={email} height={15} />
-								info@theaparafoundation.com
+								info@theaparafoundation.org
 							</p>
 						</Col>
 
