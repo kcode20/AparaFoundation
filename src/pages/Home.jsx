@@ -10,6 +10,8 @@ import depression from '../images/kids.png';
 import './Home.css';
 
 export default function Home() {
+	console.log(window.innerWidth);
+	const isMobile = window.innerWidth < 600;
 	return (
 		<div className='Home'>
 			<div className='cover'>
@@ -29,7 +31,7 @@ export default function Home() {
 			<div>
 				<Container>
 					<Row>
-						<Col xs={6}>
+						<Col xs={12} lg={6}>
 							<p>
 								The APARA Foundation is a 501c3 not for profit organization
 								centered on increasing the quality of life in individuals
@@ -57,9 +59,11 @@ export default function Home() {
 								quality of life.
 							</p>
 						</Col>
-						<Col>
-							<Image src={depression} width={500} className='depression' />
-						</Col>
+						{!isMobile && (
+							<Col>
+								<Image src={depression} width={500} className='depression' />
+							</Col>
+						)}
 					</Row>
 				</Container>
 			</div>
@@ -72,11 +76,13 @@ export default function Home() {
 								<div className='action'>
 									<Image src={donate} width={100} />
 									<h3> Send Donation</h3>
-									<p>
-										Give online, and your contribution will make a difference.
-										Your donations will go to help furthering our foundation’s
-										goals and visions.
-									</p>
+									{!isMobile && (
+										<p>
+											Give online, and your contribution will make a difference.
+											Your donations will go to help furthering our foundation’s
+											goals and visions.
+										</p>
+									)}
 								</div>
 							</a>
 						</Col>
@@ -85,11 +91,13 @@ export default function Home() {
 								<div className='action'>
 									<Image src={volunteer} width={100} />
 									<h3>Become a Volunteer</h3>
-									<p>
-										You can get involved today by becoming a Volunteer. Sign up
-										and you will be joining a group of change-makers, a network
-										strong enough to impact positive change.
-									</p>
+									{!isMobile && (
+										<p>
+											You can get involved today by becoming a Volunteer. Sign
+											up and you will be joining a group of change-makers, a
+											network strong enough to impact positive change.
+										</p>
+									)}
 								</div>
 							</a>
 						</Col>
@@ -98,12 +106,14 @@ export default function Home() {
 								<div className='action'>
 									<Image src={scholarship} width={100} />
 									<h3>Give Scholarship</h3>
-									<p>
-										Your gift will help equip children in need with necessary
-										resources, training and education while offering the promise
-										of a brighter future. You can make a difference today by
-										signing up.
-									</p>
+									{!isMobile && (
+										<p>
+											Your gift will help equip children in need with necessary
+											resources, training and education while offering the
+											promise of a brighter future. You can make a difference
+											today by signing up.
+										</p>
+									)}
 								</div>
 							</a>
 						</Col>
@@ -112,12 +122,14 @@ export default function Home() {
 								<div className='action'>
 									<Image src={project} width={100} />
 									<h3>Sponsor a Project</h3>
-									<p>
-										The APARA Foundation has many projects that need your
-										support. Whether that be our Sickle Cell Walk, Baskets for
-										Boomie, Puzzle Pieces, or other projects, your contribution
-										will ensure its progression.
-									</p>
+									{!isMobile && (
+										<p>
+											The APARA Foundation has many projects that need your
+											support. Whether that be our Sickle Cell Walk, Baskets for
+											Boomie, Puzzle Pieces, or other projects, your
+											contribution will ensure its progression.
+										</p>
+									)}
 								</div>
 							</a>
 						</Col>
