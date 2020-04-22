@@ -38,11 +38,8 @@ export default function Footer() {
 								<img alt='' src={home} height={15} /> Long Island, NY, US
 							</p>
 							<p>
-								<img alt='' src={email} height={15} />{' '}
-								info@theaparafoundation.com
-							</p>
-							<p>
-								<img alt='' src={phone} height={15} /> + 01 234 567 88
+								<img alt='' src={email} height={15} />
+								info@theaparafoundation.org
 							</p>
 						</Col>
 
