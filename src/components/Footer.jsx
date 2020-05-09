@@ -11,6 +11,7 @@ import email from '../images/email.png';
 import phone from '../images/phone.png';
 
 export default function Footer() {
+	const isMobile = window.innerWidth < 600;
 	return (
 		<div
 			className='footer'
@@ -35,10 +36,11 @@ export default function Footer() {
 						<Col>
 							<h6 className='text-uppercase mb-4 font-weight-bold'>Contact</h6>
 							<p>
-								<img alt='' src={home} height={15} /> Long Island, NY, US
+								<img className='icon' alt='' src={home} height={15} /> Long
+								Island, NY, US
 							</p>
 							<p>
-								<img alt='' src={email} height={15} />
+								<img className='icon' alt='' src={email} height={15} />
 								info@theaparafoundation.org
 							</p>
 						</Col>
@@ -48,7 +50,7 @@ export default function Footer() {
 								Follow Us On Social Media
 							</h6>
 							<ul className='list-unstyled list-inline'>
-								<li className='list-inline-item'>
+								{/*<li className='list-inline-item'>
 									<img
 										src={facebook}
 										alt='facebook'
@@ -63,25 +65,26 @@ export default function Footer() {
 										height={25}
 										className='fab fa-twitter'
 									/>
-								</li>
-								<li className='list-inline-item'>
-									<img
-										src={instagram}
-										alt='instagram'
-										height={25}
-										className='fab fa-google-plus-g'
-									/>
-								</li>
+								</li>*/}
+								<a href='https://www.instagram.com/theaparafoundation/'>
+									<li className='list-inline-item'>
+										<img
+											src={instagram}
+											alt='instagram'
+											height={25}
+											className='fab fa-google-plus-g'
+										/>
+									</li>
+								</a>
 							</ul>
 						</Col>
 					</Row>
 
 					<hr className='separator' />
 
-					<Row className='align-items-center'>
+					<Row className='align-items-center credit'>
 						<div>
-							Made with <span style={{ color: '#e25555;' }}>&#9829;</span> by
-							@kcode
+							Made with <span>&#9829;</span> by @kcode
 							<div>
 								Icons made by{' '}
 								<a

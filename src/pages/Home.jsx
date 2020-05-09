@@ -10,6 +10,7 @@ import depression from '../images/kids.png';
 import './Home.css';
 
 export default function Home() {
+	const isMobile = window.innerWidth < 600;
 	return (
 		<div className='Home'>
 			<div className='cover'>
@@ -29,7 +30,7 @@ export default function Home() {
 			<div>
 				<Container>
 					<Row>
-						<Col xs={6}>
+						<Col xs={12} lg={6}>
 							<p>
 								The APARA Foundation is a 501c3 not for profit organization
 								centered on increasing the quality of life in individuals
@@ -57,9 +58,11 @@ export default function Home() {
 								quality of life.
 							</p>
 						</Col>
-						<Col>
-							<Image src={depression} width={500} className='depression' />
-						</Col>
+						{!isMobile && (
+							<Col>
+								<Image src={depression} width={500} className='depression' />
+							</Col>
+						)}
 					</Row>
 				</Container>
 			</div>
@@ -72,6 +75,7 @@ export default function Home() {
 								<div className='action'>
 									<Image src={donate} width={100} />
 									<h3> Send Donation</h3>
+
 									<p>
 										Give online, and your contribution will make a difference.
 										Your donations will go to help furthering our foundation’s

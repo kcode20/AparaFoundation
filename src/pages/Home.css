@@ -42,7 +42,6 @@ a:hover {
 }
 
 .callToAction {
-	height: 100vh;
 	background: url('https://www.toptal.com/designers/subtlepatterns/patterns/so-white.png');
 }
 
@@ -67,4 +66,13 @@ a:hover {
 	border: 7px solid #8b55a9;
 	transform: translateY(-39px);
 	box-shadow: 5px 10px #dca4ce;
+}
+
+@media only screen and (max-width: 600px) {
+	.quote {
+		font-size: 25px;
+	}
+	.quote-subtitle {
+		font-size: 16px;
+	}
 }

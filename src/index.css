@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 
-	font-family: "Quicksand", sans-serif !important;
+	font-family: 'Quicksand', sans-serif !important;
 	color: #301934 !important;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -29,12 +29,12 @@ h5 {
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
 
 @media only screen and (max-width: 600px) {
 	.pageBody {
-		padding-top: 100px;
+		padding-top: 0px;
 	}
 }

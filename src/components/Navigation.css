@@ -12,3 +12,12 @@ a.linkStyle.nav-link:hover {
 	color: white !important;
 	background-color: #c148b9;
 }
+
+@media only screen and (max-width: 600px) {
+	.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+		position: relative;
+	}
+	.linkStyle {
+		border-style: none;
+	}
+}
