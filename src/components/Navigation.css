@@ -17,4 +17,7 @@ a.linkStyle.nav-link:hover {
 	.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 		position: relative;
 	}
+	.linkStyle {
+		border-style: none;
+	}
 }

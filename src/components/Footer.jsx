@@ -80,8 +80,7 @@ export default function Footer() {
 
 					<Row className='align-items-center'>
 						<div>
-							Made with <span style={{ color: '#e25555;' }}>&#9829;</span> by
-							@kcode
+							Made with <span>&#9829;</span> by @kcode
 							<div>
 								Icons made by{' '}
 								<a
