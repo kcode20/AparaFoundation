@@ -1,5 +1,6 @@
 .footer {
 	padding-bottom: 25px;
+	width: 100%;
 }
 
 .separator {
@@ -12,4 +13,15 @@
 
 .freepik {
 	color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.icon {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.credit {
+		padding-left: 15px;
+	}
 }

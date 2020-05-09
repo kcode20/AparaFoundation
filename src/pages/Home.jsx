@@ -10,7 +10,6 @@ import depression from '../images/kids.png';
 import './Home.css';
 
 export default function Home() {
-	console.log(window.innerWidth);
 	const isMobile = window.innerWidth < 600;
 	return (
 		<div className='Home'>
