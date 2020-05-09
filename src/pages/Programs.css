@@ -26,6 +26,10 @@
 	color: white;
 }
 
+.puzzle {
+	height: 50px;
+}
+
 .boomie {
 	color: #ff8c00;
 }
@@ -38,6 +42,24 @@
 }
 
 .boomie-text h2 {
-	font-family: "Kaushan Script", cursive;
+	font-family: 'Kaushan Script', cursive;
 	text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+	.boomie-text {
+		position: relative;
+	}
+
+	.court-cover {
+		height: 75vh;
+	}
+	.puzzle-cover {
+		height: 100%;
+	}
+
+	.puzzle {
+		height: 50px;
+		width: 50px;
+	}
 }
