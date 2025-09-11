@@ -2,7 +2,7 @@
 	"name": "apara",
 	"version": "0.1.0",
 	"engines": {
-		"node": "16.17"
+		"node": "20.16.0"
 	},
 	"private": true,
 	"proxy": "http://localhost:8080",
