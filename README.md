@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Apara Foundation [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.theaparafoundation.org)](https://www.theaparafoundation.org)  
 
-## Available Scripts
+![Apara Foundation Cover](src/images/IMG_9879.JPG)
 
-In the project directory, you can run:
 
-### `yarn start`
+The official repository for the **Apara Foundation** website.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [License](#license)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## About
+The APARA Foundation is a 501c3 not for profit organization centered on increasing the quality of life in individuals battling a variety of health conditions. The APARA foundation partners with local and national health care organizations to help increase the quality of life in individuals battling what we identify as “invisible illnesses.” Invisible Illnesses are diseases or conditions that may not be noticeable on the individuals battling them. These conditions include, but are not limited to, sickle cell anemia, lupus, mental health conditions, and some cancers. Founded in 2019 by Dr. Arinayo Apara, the foundation’s mission is to extend the outlet of support for our invisible warriors.   
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This repository contains the source code for the foundation’s official website: [theaparafoundation.org](https://www.theaparafoundation.org).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
+- Responsive React-based frontend
+- Informational pages showcasing mission, programs, and how to get involved
+- Contact and support forms
+- Fast build and deployment workflow
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tech Stack
+- **Language & Framework**: JavaScript / React (Create React App)
+- **UI Library**: React-Bootstrap
+- **Styling**: SCSS
+- **API Integration**: PayPal API for donations
+- **Deployment**: Vercel
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Getting Started
+Follow these steps to set up the project locally:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/kcode20/AparaFoundation.git
+   cd AparaFoundation
+   ```
 
-## Learn More
+2. **Install dependencies**  
+   ```bash
+   yarn install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Start the development server**  
+   ```bash
+   yarn start
+   ```
+   This runs the app in development mode.  
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Run tests**  
+   ```bash
+   yarn test
+   ```
 
-### Code Splitting
+5. **Build for production**  
+   ```bash
+   yarn build
+   ```
+   Creates an optimized production build in the `build` folder.
+   
+## License
+All Rights Reserved © 2025 Apara Foundation.  
+The source code is provided for viewing and reference only.  
+Reuse, reproduction, or distribution is not permitted without written consent.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
