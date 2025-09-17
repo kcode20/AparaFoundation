@@ -17,17 +17,13 @@ class PaypalButton extends React.Component {
 			onCancel,
 		} = this.props;
 
-		const payment = () =>
-			paypal.rest.payment.create(env, client, {
-				transactions: [
-					{
-						amount: {
-							total,
-							currency,
-						},
-					},
-				],
-			});
+		const payment = () => ({
+			transactions: [
+				{
+					amount: { total, currency },
+				},
+			],
+		});
 
 		const onAuthorize = (data, actions) =>
 			actions.payment.execute().then(() => {
